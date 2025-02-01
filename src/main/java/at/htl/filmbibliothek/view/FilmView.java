@@ -1,4 +1,4 @@
 package at.htl.filmbibliothek.view;
 
-public class FilmView {
+public class FilmView  {
 }

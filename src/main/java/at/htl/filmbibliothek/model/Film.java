@@ -74,4 +74,14 @@ public class Film {
     public void setRealeaseDate(LocalDate realeaseDate) {
         this.realeaseDate.set(realeaseDate);
     }
+
+    @Override
+    public String toString() {
+        return "Film{" +
+                "length=" + length +
+                ", name=" + name +
+                ", producer=" + producer +
+                ", realeaseDate=" + realeaseDate +
+                '}';
+    }
 }
