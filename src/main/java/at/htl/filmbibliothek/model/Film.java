@@ -6,14 +6,24 @@ import java.time.LocalDate;
 
 public class Film {
     final IntegerProperty length = new SimpleIntegerProperty();
+    final IntegerProperty id = new SimpleIntegerProperty();
     final StringProperty name = new SimpleStringProperty();
     final StringProperty producer = new SimpleStringProperty();
     final ObjectProperty<LocalDate> realeaseDate = new SimpleObjectProperty<>();
 
+    public int getId() {
+        return id.get();
+    }
+
+    public IntegerProperty idProperty() {
+        return id;
+    }
+
     public Film() {
     }
 
-    public Film(int length, String name, String producer, LocalDate releaseDate){
+    public Film(int id, int length, String name, String producer, LocalDate releaseDate){
+        this.idProperty().set(id);
         this.length.set(length);
         this.name.set(name);
         this.producer.set(producer);
