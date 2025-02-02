@@ -10,6 +10,7 @@ import java.io.IOException;
 public class FilmApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+
         Scene scene = new Scene(new VBox(), 320, 240);
         stage.setTitle("Hello!");
         stage.setScene(scene);
